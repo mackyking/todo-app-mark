@@ -33,7 +33,7 @@ app.get('/todos', (req, res) => {
 });
 
 app.listen(port, () => {
-    cosole.log(`Started up at port ${port}`);
+    console.log(`Started up at port ${port}`);
 });
 /*
 var newTodo = new Todo({
