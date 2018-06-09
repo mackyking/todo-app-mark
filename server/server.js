@@ -5,7 +5,7 @@ var bodyParser = require('body-parser');
 //This are local importation
 var {mongoose} = require('./db/mongoose');
 var {Todo} = require('./models/todo');
-var {User} = rquire('./models/user');
+var {User} = require('./models/user');
 
 var app =  exprress();
 const port = process.env.PORT || 3000;
@@ -29,7 +29,7 @@ app.get('/todos', (req, res) => {
         res.send({todos});
     }, (e) => {
         res.status(400).send(e);
-    });
+    })
 });
 
 app.listen(port, () => {
